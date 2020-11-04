@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form elements</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <h1>Surfboard </h1>
-    <form action="" method="POST"
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1>Surfboard</h1>
+    <form id="company-form" action="" method="POST">
+      <fieldset>
+        <legend>Account Setup</legend>
         <label for="username">Username</label>
-        <input type="text" name="username" id="username">
-        <br>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <br>
-        <label for="rpassword">Repeat Password</label>
-        <input type="password" name="rpassword" id="rpassword">
-        <br>
+        <input type="text" name="username" id="username" />
+        <br />
         <label for="emailid">Email</label>
-        <input type="email" name="emailid" id="emailid">
-        <br>
+        <input type="email" name="emailid" id="emailid" />
+        <br />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+        <br />
+        <label for="rpassword">Repeat Password</label>
+        <input type="password" name="rpassword" id="rpassword" />
+        <br />
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Personal Details</legend>
+        <br />
         <label for="dob">Date of Birth</label>
-        <input type="date" name="dob" id="dob">
-        <br>
+        <input type="date" name="dob" id="dob" />
+        <br />
         <label for="gender">Select your gender</label>
         <select name="gender" id="gender-select">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="transgender">Transgender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="transgender">Transgender</option>
         </select>
-        <br>
+        <br />
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Company Preference</legend>
+        <br />
         <label for="RE">Raw Engineering</label>
-        <input type="radio" name="org" value="RE" id="RE">
+        <input type="radio" name="org" value="RE" id="RE" />
         <label for="CS">Content Stack</label>
-        <input type="radio" name="org" value="CS" id="CS">
-        <br>
-        <br>
-        <input type="submit" value="Sign Up">
+        <input type="radio" name="org" value="CS" id="CS" />
+        <br />
+      </fieldset>
+      <br />
+      <input type="submit" value="Sign Up" />
     </form>
     <script src="./src/app.js"></script>
-</body>
+  </body>
 </html>
