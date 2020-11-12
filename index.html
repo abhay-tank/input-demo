@@ -7,53 +7,76 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <h1>Surfboard</h1>
-    <form id="company-form" action="" method="POST">
-      <fieldset>
-        <legend>Account Setup</legend>
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username" />
-        <br />
-        <label for="emailid">Email</label>
-        <input type="email" name="emailid" id="emailid" />
-        <br />
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" />
-        <br />
-        <label for="rpassword">Repeat Password</label>
-        <input type="password" name="rpassword" id="rpassword" />
-        <br />
-      </fieldset>
-      <br />
-      <br />
-      <fieldset>
-        <legend>Personal Details</legend>
-        <br />
-        <label for="dob">Date of Birth</label>
-        <input type="date" name="dob" id="dob" />
-        <br />
-        <label for="gender">Select your gender</label>
-        <select name="gender" id="gender-select">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="transgender">Transgender</option>
-        </select>
-        <br />
-      </fieldset>
-      <br />
-      <br />
-      <fieldset>
-        <legend>Company Preference</legend>
-        <br />
-        <label for="RE">Raw Engineering</label>
-        <input type="radio" name="org" value="RE" id="RE" />
-        <label for="CS">Content Stack</label>
-        <input type="radio" name="org" value="CS" id="CS" />
-        <br />
-      </fieldset>
-      <br />
-      <input type="submit" value="Sign Up" />
-    </form>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form class="user-form" id="company-form" action="" method="POST">
+            <fieldset id="setup-account">
+              <legend>Setup account</legend>
+              <input
+                type="text"
+                placeholder="Username"
+                name="username"
+                id="username"
+              />
+
+              <input
+                type="email"
+                placeholder="Email"
+                name="emailid"
+                id="emailid"
+              />
+
+              <input
+                type="password"
+                placeholder="Password"
+                name="password"
+                id="password"
+              />
+              <input
+                type="password"
+                placeholder="Repeat Password"
+                name="rpassword"
+                id="rpassword"
+              />
+            </fieldset>
+            <fieldset id="personal-details">
+              <legend>Personal Details</legend>
+
+              <input
+                placeholder="Date of Birth"
+                type="text"
+                onfocus="(this.type='date')"
+                name="dob"
+                id="dob"
+              />
+
+              <select name="gender" id="gender-select">
+                <option selected disabled value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="transgender">Transgender</option>
+              </select>
+            </fieldset>
+
+            <fieldset id="company-pref">
+              <legend>Company Preference</legend>
+              <div class="field-group">
+                <input type="radio" name="org" value="RE" id="RE" />
+                <label for="RE">Raw Engineering</label>
+              </div>
+              <div class="field-group">
+                <input type="radio" name="org" value="CS" id="CS" />
+                <label for="CS">Content Stack</label>
+              </div>
+            </fieldset>
+            <button class="submit-button" type="submit" value="Sign Up">
+              Sign Up
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="./src/app.js"></script>
   </body>
 </html>
