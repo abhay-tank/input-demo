@@ -13,6 +13,13 @@ body {
     rgba(0, 38, 255, 0.6),
     rgba(247, 0, 255, 0.6)
   );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
@@ -65,13 +72,13 @@ input {
   margin-bottom: 0.5rem;
   width: 80%;
   padding: 0.3rem 0.3rem;
-  border-bottom: 3px solid rgba(0, 38, 255, 0.6);
+  border-bottom: 2px solid rgba(0, 38, 255, 0.6);
 }
 
 input:focus {
   background-color: rgba(30, 0, 129, 0.3);
   border: 0;
-  border-bottom: 3px solid rgba(255, 0, 234, 0.822);
+  border-bottom: 2px solid rgba(255, 0, 234, 0.822);
 }
 
 select {
@@ -81,7 +88,7 @@ select {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   padding: 0.3rem;
-  border-bottom: 3px solid rgba(0, 38, 255, 0.6);
+  border-bottom: 2px solid rgba(0, 38, 255, 0.6);
   background-color: white;
 }
 
